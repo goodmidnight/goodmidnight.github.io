@@ -1,7 +1,7 @@
 # The Site Configuration
 
 # Import the theme
-remote_theme: "cotes2020/jekyll-theme-chirpy"
+theme: jekyll-theme-chirpy
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -14,15 +14,16 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: "내 블로그"
-tagline: "기술과 일상을 공유하는 공간"
+title: Chirpy # the main title
+
+tagline: A text-focused Jekyll theme # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://qwqeqrqwqeqr.github.io"
+url: ""
 
 github:
   username: github_username # change to your GitHub username
@@ -87,7 +88,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: dark # [light | dark]
+theme_mode: # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
@@ -150,7 +151,6 @@ paginate: 10
 
 # The base URL of your site
 baseurl: ""
-
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -224,8 +224,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-plugins:
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-seo-tag
