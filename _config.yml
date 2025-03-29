@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "goodmidnight"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : ""
+  bio              :
   location         : "SouthKorea"
   email            : "fancythat0831@gmail.com"
   links:
