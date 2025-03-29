@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="001b9bcd-5193-4a1f-b37e-dcc240ad6bb3" name="Changes" comment="feat: initialize pages">
-      <change afterPath="$PROJECT_DIR$/_pages/category-archive.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_pages/tag-archive.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_pages/year-archive.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/category-archive.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/category-archive.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_pages/category-test.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_posts/2025-03-29-TEST.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2025-03-29-TEST.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_posts/2025-03-30-TEST.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2025-03-30-TEST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/tag-archive.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/tag-archive.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-03-29-TEST.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2025-03-29-TEST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-03-30-TEST.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2025-03-30-TEST.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -136,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743209235709</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: initialize pages">
+      <option name="closed" value="true" />
+      <created>1743235705288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743235705288</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
