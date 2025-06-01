@@ -1,5 +1,3 @@
 ---
 permalink: /about/
 ---
-
-# Hello
