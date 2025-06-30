@@ -15,7 +15,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.7;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -30,7 +30,7 @@ h4,
 h5,
 h6 {
   margin: 2em 0 0.5em;
-  line-height: 1.2;
+  line-height: 1.5;
   font-family: $header-font-family;
   font-weight: bold;
 }
@@ -112,7 +112,7 @@ blockquote {
   margin-block: 2em;
   margin-inline-end: 1em;
   padding-inline: 1em;
-  font-style: italic;
+  font-style: normal;
   border-inline-start: 0.25em solid $primary-color;
 
   cite {
