@@ -111,7 +111,7 @@ analytics:
     tracking_id: "G-LK2D4GECVV"
     anonymize_ip: # true, false (default)
 
-google_analytics: "G-LK2D4GECVV"
+google_analytics: G-LK2D4GECVV
 
 # Site Author
 author:
