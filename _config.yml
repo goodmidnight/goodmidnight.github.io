@@ -104,7 +104,12 @@ social:
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
-google_analytics: G-LK2D4GECVV
+# Analytics
+analytics:
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id: "G-LK2D4GECVV"
+    anonymize_ip: false
 
 # Site Author
 author:
