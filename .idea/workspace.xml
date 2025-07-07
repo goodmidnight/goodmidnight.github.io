@@ -4,11 +4,86 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="001b9bcd-5193-4a1f-b37e-dcc240ad6bb3" name="Changes" comment="feat: initialize pages">
-      <change afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
+    <list default="true" id="001b9bcd-5193-4a1f-b37e-dcc240ad6bb3" name="Changes" comment="feat: add Google analytics tracking config&#10;- analytics 태그 관련 설정 추가">
+      <change afterPath="$PROJECT_DIR$/_data/ui-text.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/after-content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/analytics-providers/custom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/analytics-providers/google-gtag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/analytics-providers/google-universal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/analytics-providers/google.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/analytics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/archive-single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/author-profile-custom-links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/author-profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/before-related.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/breadcrumbs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/category-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/custom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/custom_scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/discourse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/disqus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/facebook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/giscus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/staticman.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/staticman_v2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments-providers/utterances.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/copyright.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/copyright.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/documents-collection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/feature_row" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/figure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/footer/custom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/gallery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/group-by-array" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/head/custom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/masthead.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/nav_list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/page__date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/page__hero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/page__hero_video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/page__meta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/page__related.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/page__taxonomy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/paginator-v1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/paginator-v2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/paginator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/post_pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/posts-category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/posts-tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/posts-taxonomy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/schema.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/search/algolia-search-scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/search/google-search-scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/search/lunr-search-scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/search/search_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/seo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/skip-links.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/social-share.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/tag-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/toc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/video" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/archive-taxonomy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/archive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/collection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/compress.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/splash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/year-archive.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/year-archive.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/scripts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +92,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -38,29 +114,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Shell Script.init.sh.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sangtaek/project/personal/post/goodmidnight.github.io/assets/css&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/sangtaek/project/personal/post/goodmidnight.github.io/node_modules/stylelint&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Shell Script.init.sh.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sangtaek/project/personal/post/goodmidnight.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/Users/sangtaek/project/personal/post/goodmidnight.github.io/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/_data" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -162,7 +238,39 @@
       <option name="project" value="LOCAL" />
       <updated>1743248958559</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore: add google analytics tag">
+      <option name="closed" value="true" />
+      <created>1751471474835</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751471474835</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore: update google analytics tag format">
+      <option name="closed" value="true" />
+      <created>1751471671566</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751471671566</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore: remove analytics settings">
+      <option name="closed" value="true" />
+      <created>1751472170981</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751472170981</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: add Google analytics tracking config&#10;- analytics 태그 관련 설정 추가">
+      <option name="closed" value="true" />
+      <created>1751846166827</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751846166827</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +281,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -181,6 +301,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: initialize pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: initialize pages" />
+    <MESSAGE value="chore: add google analytics tag&#10;&#10;# Conflicts:&#10;#&#9;_config.yml" />
+    <MESSAGE value="chore: add google analytics tag" />
+    <MESSAGE value="chore: update google analytics tag format" />
+    <MESSAGE value="chore: remove analytics settings" />
+    <MESSAGE value="feat: add Google analytics tracking config&#10;- analytics 태그 관련 설정 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Google analytics tracking config&#10;- analytics 태그 관련 설정 추가" />
   </component>
 </project>
