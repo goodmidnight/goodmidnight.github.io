@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goodmidnight.github.io/sitemap.xml
