@@ -1,3 +1,11 @@
 User-agent: *
-Allow: /
+
+Disallow: /private/
+
+User-agent: Googlebot
+Allow: /sitemap.xml
+
+User-agent: *
+Allow: /sitemap.xml
+
 Sitemap: https://goodmidnight.github.io/sitemap.xml
