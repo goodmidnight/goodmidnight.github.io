@@ -355,30 +355,30 @@ fun DataException.toDomain(): DomainException =
 
 앞서 DataException 및 DomainException을 구현하였지만, 최종적으로 처리되는 UI 영역에 대한 지침은 정의하지 않았습니다. **UI 계층은 사용자와 가장 가까이 있는 계층으로 에러를 가공하기 보다는 에러 로그를 전송하거나 사용자에게 에러에 대한 안내를 제공하여야만 합니다.**
 
-따라서 UI 계층에서 정의하는 예외 구조는 이전 Exception 구조와는 다르게 구성할 것입니다. 해당 계층의 예외 정의 클래스는 AppError로 이름을 지을 것이며, ApplicationException 과 UI에 표시할 메시지를 담당할 uiMessage 필드를 추가하겠습니다.
+따라서 UI 계층에서 정의하는 예외 구조는 이전 Exception 구조와는 다르게 구성할 것입니다. 해당 계층의 예외 정의 클래스는 UiException으로 이름을 지을 것이며, ApplicationException 과 UI에 표시할 메시지를 담당할 uiMessage 필드를 추가하겠습니다.
 
 ```kotlin
-data class AppError(
-    val exception: ApplicationException,
+data class UiException(
+    val cause: ApplicationException,
     val uiMessage: String? = null
 )
 ```
 
-이어서 AppError를 구성하기 위한 메서드를 추가하여야만 합니다. 에러는 ApplicationException을 직접적으로 전달받는 방식과 일반적인 예외(Throwable)을 전달받았을 때에 대한 케이스를 정의하였습니다. **만약 Throwable의 구체적인 타입이 Error일 경우 예외를 던지도록 설정하였습니다.**
+이어서 UiException을 구성하기 위한 메서드를 추가하여야만 합니다. 에러는 ApplicationException을 직접적으로 전달받는 방식과 일반적인 예외(Throwable)을 전달받았을 때에 대한 케이스를 정의하였습니다. **만약 Throwable의 구체적인 타입이 Error일 경우 예외를 던지도록 설정하였습니다.**
 
 ```kotlin
 companion object {
-    fun of(exception: ApplicationException): AppError = AppError(
-        exception = exception,
+    fun of(exception: ApplicationException): UiException = UiException(
+        cause = exception,
         uiMessage = exception.errorCode.toUiMessage(),
     )
 
-    fun of(exception: ApplicationException, uiMessage: String) = AppError(
-        exception = exception,
+    fun of(exception: ApplicationException, uiMessage: String) = UiException(
+        cause = exception,
         uiMessage = uiMessage,
     )
 
-    fun of(throwable: Throwable): AppError =
+    fun of(throwable: Throwable): UiException =
         when (throwable) {
             is Error -> throw throwable
             is ApplicationException -> of(throwable)
@@ -392,7 +392,7 @@ companion object {
             )
         }
 
-    fun of(throwable: Throwable, uiMessage: String?): AppError =
+    fun of(throwable: Throwable, uiMessage: String?): UiException =
         when (throwable) {
             is Error -> throw throwable
             is ApplicationException -> of(throwable, uiMessage)
@@ -418,6 +418,64 @@ private fun ErrorCode.toUiMessage(): String? {
         DomainErrorCode.UNKNOWN_ERROR -> null
     }
     else null
+}
+```
+
+최종적으로 정리하면 아래와 같은 구조로 구성되게 됩니다.
+
+```kotlin
+data class UiException(
+    val cause: ApplicationException,
+    val uiMessage: String? = null,
+) {
+    companion object {
+        fun of(exception: ApplicationException): UiException = UiException(
+            cause = exception,
+            uiMessage = exception.errorCode.toUiMessage(),
+        )
+
+        fun of(exception: ApplicationException, uiMessage: String) = UiException(
+            cause = exception,
+            uiMessage = uiMessage,
+        )
+
+        fun of(throwable: Throwable): UiException =
+            when (throwable) {
+                is Error -> throw throwable
+                is ApplicationException -> of(throwable)
+                else -> of(
+                    throwable = UnknownException(
+                        message = throwable.message ?: "An unknown error occurred.",
+                        cause = throwable.cause,
+                        errorCode = UNKNOWN_ERROR,
+                    ),
+                    uiMessage = UNKNOWN_ERROR.toUiMessage()
+                )
+            }
+
+        fun of(throwable: Throwable, uiMessage: String?): UiException =
+            when (throwable) {
+                is Error -> throw throwable
+                is ApplicationException -> of(throwable, uiMessage)
+                else -> of(
+                    throwable = UnknownException(
+                        message = throwable.message ?: "An unknown error occurred.",
+                        cause = throwable.cause,
+                        errorCode = UNKNOWN_ERROR,
+                    ),
+                    uiMessage = uiMessage
+                )
+            }
+
+        fun ErrorCode.toUiMessage(): String? {
+            return if (this is DomainErrorCode) when (this) {
+                DomainErrorCode.TIMEOUT_ERROR -> "연결 시간이 초과되었습니다."
+                DomainErrorCode.NETWORK_ERROR -> "네트워크 오류가 발생하였습니다."
+                DomainErrorCode.UNKNOWN_ERROR -> null
+            }
+            else null
+        }
+    }
 }
 ```
 
