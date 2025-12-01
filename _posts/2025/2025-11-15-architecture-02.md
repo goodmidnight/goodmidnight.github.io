@@ -1,7 +1,7 @@
 ---
 title: Android Clean Architecture Error Handling (2) - 클린 아키텍처 예외 처리 사례
 date: 2025-11-15 00:00:00
-categories: [ clean-architecture ]
+categories: [ android, clean-architecture ]
 tags: [ android,clean-architecture,development ]
 math: true
 ---
