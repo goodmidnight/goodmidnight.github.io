@@ -9,7 +9,7 @@ math: true
 
 해당 포스트는 이전 포스트와 연결되므로 이전 포스트를 먼저 보고 오시기를 추천드립니다.
 
-- [Android Clean Architecture Error Handling (1) - 클린 아키텍처 예외 구조화 사례](https://goodmidnight.github.io/clean-architecture/architecture-01/)
+- [Android Clean Architecture Error Handling (1) - 클린 아키텍처 예외 구조화 사례](https://goodmidnight.github.io/android/clean-architecture/architecture-01/)
 
 이전 포스트(1부)에서는 클린 아키텍처의 각 레이어에서 예외를 구조화하고, 예외를 UI 레이어까지 전달하는 아이디어 다루었습니다.
 
@@ -74,7 +74,7 @@ class HelloProvider {소
 
 # 구현
 
-이어서 [[이전 포스트]](https://goodmidnight.github.io/clean-architecture/architecture-01/)에서 구성한 최종 구조를 바탕으로 예외를 처리하는 몇 가지의
+이어서 [[이전 포스트]](https://goodmidnight.github.io/android/clean-architecture/architecture-01/)에서 구성한 최종 구조를 바탕으로 예외를 처리하는 몇 가지의
 아이디어를 소개하겠습니다. 이전 포스트의 최종적인 결과인 `UiException` 는 아래와 같이 구성되어있습니다.
 
 ```kotlin
